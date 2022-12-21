@@ -13,6 +13,7 @@
 html, body {
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
+    background-color: #f1f1f1;
 }
 
 
@@ -26,6 +27,20 @@ html, body {
 h3 {
     font-size: var(--f-size-md);
 }
+
+.active{
+    background-color: #f44336;
+}
+
+button {
+    border: none;
+}
+
+button:hover {
+    border: none;
+    box-shadow: none;
+}
+
 .navbar-nav{
     width: 100%;
 }
@@ -52,42 +67,46 @@ h3 {
 
 /* Hero */
 
-.hero__container{
-    /* max-width: 1500px; */
-    position: relative;
-}
 
 .heros__img{
    /* max-width: 100%;
    height: auto; */
    /* vertical-align: middle; */
    border-style: none;
+   width: 100%;
 }
 
-.bookingCard{
+#hero .bookingCard{
     position: absolute;
     width: 65%;
     background-color: #fff;
+    top: 50%;
     left: 50%;
-    bottom: 50%;
     transform: translate(-50%, -50%);
 }
 
 #hero .booking__items{
    width: 100%;
    margin: 0;
+   padding: 0;
 }
 
 #hero .booking__items li {
     /* Để 3 li sát lại */
    width: fit-content; 
+ 
 }
 
  #hero .booking__items li button{
     background-color: transparent;
     color: #FFF;
+   
+    border: none;
 }
-
+#hero .booking__items li:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
 #hero  .booking__items li button i {
     margin-right: 16px;
 }
@@ -97,7 +116,56 @@ h3 {
     margin : 10px 0px;
 }
 
-#hero .booking__btn{
-
+.booking__body span {
+    background-color: #ff5722;
+    text-transform: uppercase;
+    width: fit-content;
+}
+.hotelBody{
+    display: none;
+}
+.rentalBody {
+    display: none;
+}
+/* Offers */
+#offer .row .col-6 img{
+    width: 100%;
+   
 }
 
+.img-container::after{
+    content: 'Cinque Terre';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 8px 16px 8px 28px;
+}
+.img-container{
+    position: relative;
+}
+
+/* #explore .row .col-6 img{
+    width: 100%;
+} */
+    
+#newsletter{
+    opacity: 0.7;
+}
+
+#newsletter:hover{
+    opacity: 1;
+    transition: all .25 ease;
+}
+
+
+/* Contact */
+#contact .contatc-info .info i{
+    width: 30px;
+}
+
+
+/* Footer */
+#footer .footer_icon i{
+    width: 30px;
+    height: 30px;
+}
