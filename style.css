@@ -127,7 +127,7 @@ button:hover {
 
 
 /* Begin: Offers */
-#offer .row .col-6 img{
+#offer .row  img{
     width: 100%;
 }
 
@@ -177,4 +177,25 @@ button:hover {
 #footer p a{
     cursor: pointer;
     text-decoration-line: underline;
+}
+
+
+/* Responsive */
+
+/* Tablet */
+@media screen and (max-width: 1023px ) {
+                
+}
+
+/* Mobile */
+@media screen and (max-width: 739px) {
+   
+    #hero {
+        display: none;
+    }
+
+    .img-container::after { 
+        padding: 8px 16px 28px 28px;
+    }
+    
 }
